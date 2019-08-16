@@ -1,0 +1,33 @@
+<!--<h1>{{cvfull.name}}</h1>-->
+<!--<h1>{{cvfull[0].name}}</h1>-->
+<h1>test:: {{name}}</h1>
+
+<section id="personalDetails" class="" data-template="personalDetails">
+  <h1>This ia a test to repeat my contract roles</h1>
+  <article>
+    <p>
+      <span class="contact--address1">{{address_line_1}}</span><br />
+      <span class="contact--address2">{{address_line_2}}</span><br />
+      <span class="contact--address3">{{address_line_3}}</span><br />
+      <span class="contact--postcode">{{post_code}}</span><br />
+    </p>
+    <p class="contact--address"></p>
+    <a href="mailto:info@info.co.uk" class="contact--email">My Email address</a><br />
+    <a href="tel:07872443882" class="contact--tele">009889993003</a>
+  </article>
+  <p id="name">
+    <span id="firstName">Arthur</span>
+    <span id="middleName">Stephen</span>
+    <span id="lastName">Anderson</span>
+  </p>
+</section>
+
+<section *ngFor="let contract of contracts">
+  <h1>{{contract}}</h1>
+  <p id="contractRole">{{role}}</p>
+  <p id="contractDuration">{{duration}}</p>
+  <p id="contractLocation">{{location}}</p>
+  <p id="contractDuties">{{duties}}</p>
+  <p id="contractTechnology">{{technology}}</p>
+
+</section>
